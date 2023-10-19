@@ -7,29 +7,29 @@ function getComputerChoice() {
 function singleRound(playerSelection, computerSelection) {
     
     if (playerSelection === computerSelection) {
-        console.log("It's a tie!");
+        return "It's a tie!";
     }
     //Player wins
     else if (playerSelection === "Rock" & computerSelection === "Scissors") {
-        console.log("You Win! Rock beats Scissors");
+        return "You Win! Rock beats Scissors";
     }
     else if (playerSelection === "Paper" & computerSelection === "Rock") {
-        console.log("You Win! Paper beats Rock");
+        return "You Win! Paper beats Rock";
     }
     else if (playerSelection === "Scissors" & computerSelection === "Paper") {
-        console.log("You Win! Scissors beats Paper");
+        return "You Win! Scissors beats Paper";
     }
     //computer wins
     else if (computerSelection === "Rock" & playerSelection === "Scissors") {
-        console.log("You Lose! Rock beats Scissors");
+        return "You Lose! Rock beats Scissors";
     }
     else if (computerSelection === "Paper" & playerSelection === "Rock") {
-        console.log("You Lose! Paper beats Rock");
+        return "You Lose! Paper beats Rock";
     }
     else if (computerSelection === "Scissors" & playerSelection === "Paper") {
-        console.log("You Lose! Scissors beats Paper");
+        return "You Lose! Scissors beats Paper";
     }
     else {
-        console.log("Invalid Input\nMake sure you've selected one these: Rock, Paper, Scissors");
+        return "Invalid Input\nMake sure you've selected one these: Rock, Paper, Scissors";
     }
 }
