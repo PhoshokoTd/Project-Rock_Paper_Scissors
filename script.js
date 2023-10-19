@@ -75,3 +75,6 @@ function game() {
         console.log("You Lost, Better luck next time!");
     }
 }
+
+//call the function
+game()
